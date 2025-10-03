@@ -1,4 +1,4 @@
-import { PokemonGrid } from "@/app/components";
+import { PokemonGrid } from "@/components";
 import { PokemonsResponse, SimplePokemon } from "@/app/interfaces";
 
 const getPokemons = async (
@@ -18,7 +18,7 @@ const getPokemons = async (
 };
 
 export default async function PokemonsPage() {
-  const pokemons = await getPokemons();
+  const pokemons = await getPokemons(10);
   return (
     <div className="flex flex-col">
       <span className="text-5xl my-2">

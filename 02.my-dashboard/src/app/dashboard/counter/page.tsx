@@ -1,4 +1,4 @@
-import { CartCounter } from "@/app/components";
+import { CartCounter } from "@/components";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,4 +14,3 @@ export default function CounterPage() {
     </div>
   );
 }
-
